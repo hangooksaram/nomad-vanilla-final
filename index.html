@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/512b03a6cb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="sign">
+      <div id="sign-in">
+        <h1>Welcome !</h1>
+        <div class="flex-col">
+          <input placeholder="ID" type="text" id="sign-in-id" />
+          <input placeholder="Password" type="password" id="sign-in-pw" />
+        </div>
+        <div class="flex-row">
+          <div id="sign-in-btn">Sign In</div>
+          <div id="show-sign-up-btn" class="outline-btn">
+            create new account
+          </div>
+        </div>
+      </div>
+      <div id="sign-up" class="hide">
+        <h1>Sign Up</h1>
+        <div class="flex-col">
+          <input placeholder="ID" type="text" id="sign-up-id" />
+          <input placeholder="Password" type="password" id="sign-up-pw" />
+        </div>
+        <div id="sign-up-btn">Confirm</div>
+      </div>
+    </section>
+
+    <section id="app">
+      <div class="app-info">
+        <div id="date"></div>
+        <div id="weather"></div>
+      </div>
+      <div>
+        <h3>Todo List</h3>
+        <div id="no-todo" class="hide">
+          nothing is here.. type something to do !
+        </div>
+        <ul id="todo-list"></ul>
+      </div>
+      <div class="todo-add-container">
+        <input placeholder="Type Something!" type="text" id="todo-input" />
+        <span id="todo-add-btn" class="outline-btn">Add</span>
+      </div>
+      <div id="done-list-container" class="hide">
+        <h3>Done List</h3>
+        <ul id="done-list"></ul>
+      </div>
+    </section>
+    <script src="./src/weather.js"></script>
+    <script src="./src/auth.js"></script>
+    <script src="./src/date.js"></script>
+    <script src="./src/todo.js"></script>
+    <script src="./src/background.js"></script>
+  </body>
+</html>

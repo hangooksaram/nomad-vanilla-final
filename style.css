@@ -1,0 +1,135 @@
+/* golos-text-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/golos-text-v3-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("../fonts/golos-text-v3-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+body,
+html {
+  font-family: "Golos Text";
+  height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+section {
+  margin: 40px auto;
+  width: 80%;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+*:focus {
+  outline: none;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  margin-bottom: 16px;
+}
+li > div {
+  width: 70%;
+  font-size: 24px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.outline-btn {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.outline-btn:hover {
+  background-color: rgb(255, 132, 0);
+  color: white;
+}
+
+#show-sign-up-btn {
+  width: 42%;
+}
+
+#sign-in-btn,
+#sign-up-btn {
+  padding: 10px 0px;
+  cursor: pointer;
+  width: 42%;
+}
+
+#sign-up-btn {
+  width: 100%;
+}
+
+input {
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+}
+
+#todo-input {
+  font-size: 24px;
+  margin-right: 16px;
+  margin-bottom: 0px;
+}
+
+#todo-add-btn {
+  padding: 8px;
+}
+
+.hide {
+  display: none;
+}
+
+.todo-add-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 48px 0px;
+}
+
+i {
+  font-size: 30px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+i:hover {
+  opacity: 1;
+}
+#delete-todo,
+#delete-complete-todo {
+  color: red;
+}
+
+#complete-todo {
+  color: green;
+}
+
+.app-info {
+  margin-bottom: 24px;
+}
