@@ -1,12 +1,12 @@
 const bgList = [
-  "../images/random-bg-1.jpg",
-  "../images/random-bg-2.jpg",
-  "../images/random-bg-3.jpg",
-  "../images/random-bg-4.jpg",
-  "../images/random-bg-5.jpg",
-  "../images/random-bg-6.jpg",
-  "../images/random-bg-7.jpg",
-  "../images/random-bg-8.jpg",
+  "../nomad-vanilla-final/images/random-bg-1.jpg",
+  "../nomad-vanilla-final/images/random-bg-2.jpg",
+  "../nomad-vanilla-final/images/random-bg-3.jpg",
+  "../nomad-vanilla-final/images/random-bg-4.jpg",
+  "../nomad-vanilla-final/images/random-bg-5.jpg",
+  "../nomad-vanilla-final/images/random-bg-6.jpg",
+  "../nomad-vanilla-final/images/random-bg-7.jpg",
+  "../nomad-vanilla-final/images/random-bg-8.jpg",
 ];
 
 const getRandomBg = () => {
